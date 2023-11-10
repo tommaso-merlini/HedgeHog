@@ -24,7 +24,7 @@ To use this code, follow these steps:
 1. Clone the repository.
 
    ```bash
-   git clone https://github.com/tommaso-merlini/HedgeHog#overview
+   git clone https://github.com/tommaso-merlini/HedgeHog.git
    ```
 
 2. Navigate to the directory containing the code.
