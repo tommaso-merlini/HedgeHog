@@ -36,7 +36,7 @@ To use this code, follow these steps:
 3. Compile the code using your preferred C compiler.
 
    ```bash
-   gcc main.c -o main
+   gcc main.c -o main -lm
    ```
 
 4. Run the compiled executable.
