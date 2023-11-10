@@ -34,7 +34,7 @@ void main(void) {
 
 
     //now search the closest vector to vec3 -> vec2
-    Embedding result = topEmbedding(vec1.vector, db, VECTORS_DIMENSIONS);
+    Embedding result = topEmbedding(vec3.vector, db, VECTORS_DIMENSIONS);
     printf("%s", result.metadata);
 }
 
