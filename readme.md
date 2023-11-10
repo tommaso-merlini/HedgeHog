@@ -36,12 +36,12 @@ To use this code, follow these steps:
 3. Compile the code using your preferred C compiler.
 
    ```bash
-   gcc vector_db.c -o vector_db
+   gcc main.c -o main
    ```
 
 4. Run the compiled executable.
    ```bash
-   ./vector_db
+   ./main
    ```
 
 ### Functions
