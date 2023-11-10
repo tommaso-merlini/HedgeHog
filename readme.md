@@ -24,13 +24,13 @@ To use this code, follow these steps:
 1. Clone the repository.
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/tommaso-merlini/HedgeHog#overview
    ```
 
 2. Navigate to the directory containing the code.
 
    ```bash
-   cd <repository-directory>
+   cd HedgeHog
    ```
 
 3. Compile the code using your preferred C compiler.
