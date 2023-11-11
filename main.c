@@ -24,14 +24,13 @@ void main(void) {
     Embedding vec2;
     Embedding vec3;
 
-    vec1 = (Embedding){.vector = {0,0,0}, .metadata = "vec1" };
-    vec2 = (Embedding){.vector = {0,0,2}, .metadata = "vec2"};
-    vec3 = (Embedding){.vector = {0,0,100}, .metadata = "vec3"};
+    vec1 = (Embedding){.vector = {-0.021426061, -0.00665704, 0.020520154}, .metadata = "vec1" };
+    vec2 = (Embedding){.vector = {-0.0204378, -0.017829886, 0.008949257}, .metadata = "vec2"};
+    vec3 = (Embedding){.vector = {-0.01877697, 0.010980684, -0.01781616}, .metadata = "vec3"};
 
     //insert only vec1 and vec2 in db
     db[0] = vec1;
     db[1] = vec2;
-
 
     //now search the closest vector to vec3 -> vec2
     Embedding result = topEmbedding(vec3.vector, db, VECTORS_DIMENSIONS);
@@ -46,7 +45,7 @@ Embedding topEmbedding(float vector[], Embedding db[], int dimensions) {
     while(i < MAX_EMBEDDINGS) {
         float distance = cosineDistance(vector, db[i].vector, dimensions);
 
-        if(distance > topScore || i == 0) {
+        if(distance > topScore) {
             topEmbedding = db[i];
             topScore = distance;
         }

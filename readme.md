@@ -67,9 +67,9 @@ To use this code, follow these steps:
 
 ```c
 // Create sample vectors
-Embedding vec1 = {.vector = {0, 0, 0}, .metadata = "vec1"};
-Embedding vec2 = {.vector = {0, 0, 2}, .metadata = "vec2"};
-Embedding vec3 = {.vector = {0, 0, 100}, .metadata = "vec3"};
+Embedding vec1 = {.vector = {-0.021426061, -0.00665704, 0.020520154}, .metadata = "vec1"};
+Embedding vec2 = {.vector = {-0.0204378, -0.017829886, 0.008949257}, .metadata = "vec2"};
+Embedding vec3 = {.vector = {-0.01877697, 0.010980684, -0.01781616}, .metadata = "vec3"};
 
 // Insert vectors into the database
 db[0] = vec1;
